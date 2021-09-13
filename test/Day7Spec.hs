@@ -4,7 +4,7 @@ import Test.Hspec
 import Day7 (part1,part2)
 
 spec = do
-    describe "day 5" $ do
+    describe "day 7" $ do
         it "part 1" $ do
             s <- readFile "input/7.txt"
             part1 s `shouldBe` "956"

@@ -4,7 +4,7 @@ import Test.Hspec
 import Day6 (part1,part2)
 
 spec = do
-    describe "day 5" $ do
+    describe "day 6" $ do
         it "part 1 (1)" $
             part1 "turn on 0,0 through 999,999" `shouldBe` "1000000"
         it "part 1 (2)" $
