@@ -21,5 +21,5 @@ findHash match str = go 1 where
            in if matches h
                then n
                else go (n + 1)
-    matches = (== match) . BS.take (fromIntegral l) -- . show
+    matches = (== match) . BS.take (fromIntegral l)
     l = BS.length match
