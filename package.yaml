@@ -26,6 +26,8 @@ dependencies:
 - bytestring
 - base16-bytestring
 - cryptohash-md5
+- parsec
+- mtl
 
 default-extensions:
 - FlexibleContexts
