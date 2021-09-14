@@ -18,15 +18,18 @@ type Range = (Coord, Coord)
 data CommandType = Toggle | TurnOn | TurnOff
 data Command = Command CommandType Range
 
-runCommands :: (forall f. Applicative f => CommandType -> (f a -> f a)) -- ^ the mapping function per commandtype
-            -> a                                                        -- ^ the initial light value
-            -> [Command]                                                -- ^ the commands to apply
-            -> IntMap a                                                 -- ^ the resulting light map
+runCommands :: ActionMap a  -- ^ the mapping function per commandtype
+            -> a            -- ^ the initial light value
+            -> [Command]    -- ^ the commands to apply
+            -> IntMap a     -- ^ the resulting light map
 runCommands actionMap initialValue = go initialMap where
     initialMap = fromList (zip [0..999999] (repeat initialValue))
     go m [] = m
     go m ((Command c r):cs) = let m' = alterMap m (rangeToIndices r) (actionMap c) in go m' cs
     alterMap m is f = foldr (alter f) m is
+
+-- | Mapping from a CommandType to a mapping function
+type ActionMap a = (forall f. Applicative f => CommandType -> (f a -> f a))
 
 actionForCommand1 :: Applicative f => CommandType -> f Bool -> f Bool
 actionForCommand1 Toggle = fmap not

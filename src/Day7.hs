@@ -13,7 +13,7 @@ import Data.Either (fromRight)
 import Data.Char (isAlpha, isNumber)
 import Text.Parsec (parse,string, many1, satisfy, (<|>), choice, space, skipMany, try)
 import Text.Parsec.Error (ParseError)
-import Control.Monad.State (evalState, modify, get, State)
+import Control.Monad.State (evalState, modify, get)
 import Data.Functor ((<&>))
 
 part1 :: Puzzle
