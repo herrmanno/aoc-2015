@@ -32,6 +32,7 @@ library
       Day6
       Day7
       Day8
+      Day9
       Puzzle
   other-modules:
       Paths_AoC2015
@@ -93,6 +94,7 @@ test-suite AoC2015-test
       Day6Spec
       Day7Spec
       Day8Spec
+      Day9Spec
       Paths_AoC2015
   hs-source-dirs:
       test
