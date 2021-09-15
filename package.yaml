@@ -28,6 +28,9 @@ dependencies:
 - cryptohash-md5
 - parsec
 - mtl
+- aeson
+- vector
+- unordered-containers
 
 default-extensions:
 - FlexibleContexts
@@ -35,6 +38,7 @@ default-extensions:
 - MultiParamTypeClasses
 - OverloadedStrings
 - RankNTypes
+- TypeApplications
 
 library:
   source-dirs: src
