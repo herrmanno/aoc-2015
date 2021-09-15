@@ -4,7 +4,7 @@ import Test.Hspec
 import Day10 (lookAndSay)
 
 spec = do
-    describe "day 9" $ do
+    describe "day 10" $ do
         let input = [1]
         let expected = [ [1,1]
                        , [2,1]
