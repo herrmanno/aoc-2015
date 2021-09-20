@@ -19,6 +19,7 @@ import qualified Day14
 import qualified Day15
 import qualified Day16
 import qualified Day17
+import qualified Day18
 
 main :: IO ()
 main = do
@@ -57,6 +58,7 @@ puzzles =
         , (Day15.part1, Day15.part2)
         , (Day16.part1, Day16.part2)
         , (Day17.part1, Day17.part2)
+        , (Day18.part1, Day18.part2)
         ]
 
 getPuzzle :: Int -> Maybe (Puzzle, Puzzle)
