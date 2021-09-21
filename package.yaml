@@ -31,6 +31,7 @@ dependencies:
 - aeson
 - vector
 - unordered-containers
+- arithmoi
 
 default-extensions:
 - FlexibleContexts

@@ -36,6 +36,7 @@ library
       Day18
       Day19
       Day2
+      Day20
       Day3
       Day4
       Day5
@@ -57,6 +58,7 @@ library
       TypeApplications
   build-depends:
       aeson
+    , arithmoi
     , base >=4.7 && <5
     , base16-bytestring
     , bytestring
@@ -88,6 +90,7 @@ executable AoC2015-exe
   build-depends:
       AoC2015
     , aeson
+    , arithmoi
     , base >=4.7 && <5
     , base16-bytestring
     , bytestring
@@ -137,6 +140,7 @@ test-suite AoC2015-test
   build-depends:
       AoC2015
     , aeson
+    , arithmoi
     , base >=4.7 && <5
     , base16-bytestring
     , bytestring
