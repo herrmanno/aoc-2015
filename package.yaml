@@ -32,6 +32,8 @@ dependencies:
 - vector
 - unordered-containers
 - arithmoi
+- lens
+- heap
 
 default-extensions:
 - FlexibleContexts

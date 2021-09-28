@@ -22,6 +22,7 @@ import qualified Day18
 import qualified Day19
 import qualified Day20
 import qualified Day21
+import qualified Day22
 
 -- |All the puzzles for the whole event
 puzzles :: [(Puzzle, Puzzle)]
@@ -47,6 +48,7 @@ puzzles =
         , (Day19.part1, Day19.part2)
         , (Day20.part1, Day20.part2)
         , (Day21.part1, Day21.part2)
+        , (Day22.part1, Day22.part2)
         ]
 
 getPuzzle :: Int -> Maybe (Puzzle, Puzzle)
